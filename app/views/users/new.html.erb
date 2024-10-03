@@ -1,0 +1,133 @@
+<!-- app/views/users/new.html.erb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an Account</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      align-items: stretch;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 30px
+    }
+
+    .text-container {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      background-color: rgb(232, 93, 93);
+      color: #6366F1;
+      margin-right: 100px;
+      font-size: 50px;
+      padding-top: 100px
+    }
+
+    .form-container {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: gray;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .text {
+      font-size: 1.2em;
+      color: #fff;
+    }
+
+  .user-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .btn-primary {
+    background-color: rgb(232, 93, 93);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: rgb(232, 93, 93);
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-container">
+      <div class="text">
+        <strong>LeadWise!</strong> 
+        <p>Your Partner to Growth</p>
+      </div>
+    </div>
+    <div class="form-container">
+      <h1>Create an Account to be Part of Our Network</h1>
+      <%= render 'form', user: @user %>
+    </div>
+  </div>
+</body>
+</html>
